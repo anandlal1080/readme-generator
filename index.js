@@ -6,7 +6,7 @@ const fs = require("fs");
 
 inquirer.prompt(questions).then((response) => {
 
-     fs.writeFile("README.md", `## Title
+     fs.writeFile("README2.md", `## Title
 
 ${response.title}
 
