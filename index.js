@@ -6,8 +6,7 @@ const fs = require("fs");
 
 inquirer.prompt(questions).then((response) => {
 
-    // JSON.stringify(response)
-    fs.writeFile("README.md", `## Title
+     fs.writeFile("README.md", `## Title
 
 ${response.title}
 
@@ -37,7 +36,7 @@ ${response.test}
 
 ## Gihub Username
 
-<strong><em>[Github](https://github.com/${response.github})</em></strong>
+<strong><em>[Github Profile](https://github.com/${response.github})</em></strong>
 
 ## Email Contact
 
